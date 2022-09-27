@@ -3,7 +3,7 @@
 The goals of this chapter are to perform an OER analysis as described in~\cite{dietz2015teoo,dietz2020enterprise}. For simplicity, we will only do the following steps: 
 
 \begin{enumerate}
-    \item Find and insert or write the project domain description into this document. The domain should have at least 7 ontological transactions. 
+    \item Find and insert or write the project domain description into this document. The domain should have at least 5 ontological transactions. Each transaction needs to have defined at least 5 act. 
     \item Perform the OER analysis and find \oact{ontological acts} and \iact{infological acts}. 
     \item Identify ontological transaction kinds and put them in the text. E.g. \oact{[TK1/rq]} 
     \item Create an extended transaction result table (e-TRT). Map the transaction acts to the project domain description. See the~\cref{tab:etrt}. 
@@ -13,7 +13,7 @@ The goals of this chapter are to perform an OER analysis as described in~\cite{d
     \begin{enumerate}
         \item The CSD and OFD models need to be in English.
         \item CSD - only ontological level. Using interstrictions (dashed lines) will save you from doing PSD. 
-        \item PSD - Someone should be able to devise a database model from the result. At least 7 entities and 15 fields. 
+        \item PSD - Someone should be able to devise a database model from the result. At least 5 entities and 15 fields. 
     \end{enumerate}
     \item Summarize your modeling thoughts and revelations. Don't forget about missing transaction steps table~\cref{tab:missing_transaction_steps}.
 \end{enumerate}
@@ -110,32 +110,4 @@ Before starting with a CSD model, it is important to think about the transaction
 
 \section{Summary}
 
-Some comments about the OER analysis belong here. Why were you not able find some responsibilities? What was vaguely defined? Just roast the authors of the assignment (not the teachers :). 
-
-And finally, show how much information is missing in a table~\cref{tab:missing_transaction_steps}. 
-
-\begin{table}[h]\centering
-\caption{Missing Transaction Steps}
-\label{tab:missing_transaction_steps}
-\begin{tabular}{|l||l|l|l|}
-\hline
-                      & Specified    & Not Specified & Missing Information \\ \hline
-\multicolumn{4}{|c|}{Standard Transaction Pattern}                        \\ \hline
-Request               & 2           & 0            & 0\%             \\ \hline
-Promise               & 1           & 1            & 50\%            \\ \hline
-Decline               & 1          & 1           & 50\%             \\ \hline
-Declare               & 2           & 0            & 0\%              \\ \hline
-Reject                & 0            & 2           & 100\%             \\ \hline
-Accept                & 0           & 2            & 100\%            \\ \hline
-\textbf{Total}        & \textbf{6} & \textbf{6}  & \textbf{50\%}   \\ \hline
-\multicolumn{4}{|c|}{Revokes}                                             \\ \hline
-Revoke Request        & 0            & 2           & 100\%             \\ \hline
-Revoke Promise        & 0            & 2           & 100\%             \\ \hline
-Revoke Declare        & 0            & 2           & 100\%            \\ \hline
-Revoke Accept         & 0            & 2           & 100\%             \\ \hline
-\textbf{Total}        & \textbf{0}   & \textbf{8} & \textbf{100\%}    \\ \hline
-\multicolumn{4}{|c|}{Complete Transaction Pattern}                        \\ \hline
-\textbf{Total}        & \textbf{6} & \textbf{14} & \textbf{70\%}    \\ \hline
-\end{tabular}
-
-\end{table}
+Some comments about the OER analysis belong here.
